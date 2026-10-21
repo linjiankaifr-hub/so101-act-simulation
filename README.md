@@ -37,3 +37,9 @@
 新增[保存轨迹诊断](results/closed_loop/diagnosis-20261021/分析报告.md)与[面试讲述](docs/diagnosis-interview-20261021.md)：配对统计改善和退步，并对同一初始条件检查方块高度、夹爪状态及动作目标变化。只分析已有结果，没有新增训练或恢复控制器。
 
 ![轨迹诊断](results/closed_loop/diagnosis-20261021/saved-trajectory-diagnosis.png)
+
+重放已有实验：[正常条件三窗口录像](results/closed_loop/standard-comparison.mp4) · [外力条件三窗口录像](results/closed_loop/push-comparison.mp4)。画面为真实查询时刻的观测采样保持，并非每步录屏。
+
+公开轨迹也可离线重生成诊断：安装 NumPy 与 Matplotlib 后，在仓库根目录运行 `python analysis/analyze_act.py --root .`；无需模型权重或 GPU。
+
+进一步做了[固定历史观测的CPU动作块重放](results/closed_loop/diagnosis-20261021/历史观测重放.md)：三次重放前5步与原指令最大误差不超过6.1e-5rad；原先丢弃的后段预测具有更大关节目标变化。这支持继续检验动作推进不足的假设，未执行的预测不计作成功回合。该重放需要原模型权重，仓库中仅发布脚本、预测记录和图表。

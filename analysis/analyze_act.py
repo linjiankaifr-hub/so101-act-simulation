@@ -72,24 +72,27 @@ out={'purpose':'Descriptive analysis of existing results; no new policy or recov
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-fig,ax=plt.subplots(3,1,figsize=(10,8),sharex=True)
+fig,ax=plt.subplots(4,1,figsize=(10,10),sharex=True)
 colors={5:'#dc784f',10:'#3c8c9d',30:'#7466b0'}
 for h,t in traces.items():
     x=np.arange(len(t['actions']))/20
     ax[0].plot(x,t['cube'][:,2]*100,label=f'Execute {h} steps',color=colors[h])
     ax[1].plot(x,t['states'][:,-1],color=colors[h])
+    ax[2].plot(x,t['actions'][:,-1],color=colors[h],alpha=.85)
     change=np.r_[np.nan,np.linalg.norm(np.diff(t['actions'][:,:5],axis=0),axis=1)]
-    ax[2].plot(x,change,color=colors[h],alpha=.85)
+    ax[3].plot(x,change,color=colors[h],alpha=.85)
 ax[0].axhline(4.5,color='gray',linestyle='--',label='Height criterion only (not full success)')
 ax[0].set_ylabel('Cube center height (cm)');ax[0].legend(fontsize=8)
 ax[1].set_ylabel('Actual gripper angle (rad)')
-ax[2].set_ylabel('Arm target change norm (rad)');ax[2].set_xlabel('Simulation time (s)')
+ax[2].set_ylabel('Gripper target angle (rad)')
+ax[3].set_ylabel('Arm target change norm (rad)');ax[3].set_xlabel('Simulation time (s)')
 for a in ax:a.grid(alpha=.2)
 fig.suptitle('ACT saved trajectories | same initial seed 70000 | normal condition\nSingle-case diagnostics; no new policy and no causal proof')
 fig.tight_layout();fig.savefig(OUT/'saved-trajectory-diagnosis.png',dpi=160);plt.close(fig)
 
 table='\n'.join(f"| {r['window']} | {r['steps']} | {'成功' if r['success'] else '失败'} | {r['max_cube_height_m']*100:.2f} | {r['arm_target_change_rad_boundary']['mean']:.4f} | {r['arm_target_change_rad_within_chunk']['mean']:.4f} |" for r in representatives)
 pairtable='\n'.join(f"| {r['condition']} | {r['window']} | {r['both_success']} | {r['new_success']} | {r['lost_success']} | {r['both_failure']} |" for r in paired)
+griptable='\n'.join(f"| {r['window']} | {r['gripper_target_change_rad_boundary']['mean']:.4f} | {r['gripper_target_change_rad_within_chunk']['mean']:.4f} | {r['actual_gripper_min_rad']:.4f} |" for r in representatives)
 report=f'''# ACT 动作窗口失败分析
 
 分析日期：2026-10-21。本轮只读取既有100组配对测试及预先指定的第一题seed70000轨迹，没有重训、改模型或增加评测成绩。
@@ -115,6 +118,14 @@ report=f'''# ACT 动作窗口失败分析
 ![已保存轨迹诊断](saved-trajectory-diagnosis.png)
 
 5步和10步在这一个初始条件下没有将方块抬到高度阈值；30步成功完成。短窗口存在块边界目标变化，具体数值见表；但不能据此归因所有失败。窗口本身改变了机器人走过的路径、阶段和采样数，不能把不同轨迹的均值差直接当成因果效应。夹爪闭合角也不能单独证明正确夹住物体。
+
+夹爪目标单独统计，避免前五关节变化范数掩盖夹爪指令的特点：
+
+| 执行窗口 | 块边界夹爪目标平均变化rad | 块内平均变化rad | 实际夹爪最小角度rad |
+|---|---:|---:|---:|
+{griptable}
+
+本回合5步窗口在重新查询边界有更明显的夹爪目标变化，但实际夹爪状态与目标不同，不能把目标震荡直接等同于物体掉落。5步和30步的最小实际夹爪角相近，物体高度却不同，也说明“夹爪闭合”不是“成功夹起”的充分证据。
 
 ## 可以讲的结论
 
