@@ -24,7 +24,7 @@
 
 1. 在 Windows + WSL Ubuntu 24.04 或 Linux 中准备 Python 3.12、uv、PyTorch 及 OpenGL/OSMesa。
 2. 在 Windows PowerShell 执行 `scripts/bootstrap_sources.ps1`，按 `sources.json` 恢复固定版本上游源码和 SO101 资产。
-3. 阅读 [本机运行说明](docs/local-experiment.md)。其中 `setup.sh` 与 `common.sh` 包含本机 uv、渲染和环境路径，应先按目标机器调整；不是通用一键安装器。
+3. 阅读 [本机运行说明](LOCAL_EXPERIMENT.md)。其中 `setup.sh` 与 `common.sh` 包含本机 uv、渲染和环境路径，应先按目标机器调整；不是通用一键安装器。
 4. 安装依赖后执行采集、训练及评测入口；每一轮完整协议见 `docs/*protocol.md`。旧协议锁定原源码/权重指纹，不能通过改写记录将新运行冒充历史实验。
 
 主要实现：`scripts/so101_env.py`、`expert.py`、`collect.py`、`train_act.py`、`evaluate_act.py`；实验与审计位于同目录，契约测试位于 `tests/`。
