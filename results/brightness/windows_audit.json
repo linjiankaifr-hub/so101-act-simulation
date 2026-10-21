@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-19T14:19:14.4153979+08:00",
+  "tests": 37,
+  "formal_episodes": 400,
+  "development_episodes": 80,
+  "scores": {
+    "brightness_aug": {
+      "lighting": 68,
+      "standard": 76
+    },
+    "brightness_control": {
+      "lighting": 64,
+      "standard": 65
+    }
+  },
+  "old_model_fingerprints_preserved": true
+}

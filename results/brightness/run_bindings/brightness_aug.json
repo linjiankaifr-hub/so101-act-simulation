@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "name": "brightness_aug",
+    "protocol_sha256": "01be907f1a5bfa76b4e98b819d82b9357c13d24cccf4764dd106f319c7b903d8"
+  },
+  "capture": "verified backfill during first run; original ordered LeRobot splits and pre-training manifest timestamps checked",
+  "evidence": {
+    "original_export_splits_match": true,
+    "manifests_predate_first_initialization": true,
+    "core_code_and_hdf5_match_initial_protocol": true,
+    "legacy_protocol_sha256": "eba39545431e35ecf272de4eb0a29c312b8137fcb35572d267b9d429e4ca049e"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "evaluation_episodes": 720,
+  "unique_final_initial_conditions": 100,
+  "weights_unchanged": true,
+  "previous_models_unchanged": true,
+  "expert_used": false,
+  "original_environment": {
+    "python": "3.12.3",
+    "torch": "2.7.1+cu126",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cuda": "12.6"
+  },
+  "checkpoint": "/mnt/d/\u5177\u8eab\u667a\u80fd\u5f00\u6e90\u9879\u76ee/\u4eff\u771f\u5b9e\u6218/07-SO101-ACT\u5b8c\u6574\u95ed\u73af/checkpoints/background_control/deploy",
+  "window_pairs_against_30": {
+    "standard": {
+      "5": {
+        "both_success": 13,
+        "gained": 9,
+        "lost": 45,
+        "both_failure": 33
+      },
+      "10": {
+        "both_success": 22,
+        "gained": 5,
+        "lost": 36,
+        "both_failure": 37
+      }
+    },
+    "push": {
+      "5": {
+        "both_success": 0,
+        "gained": 17,
+        "lost": 0,
+        "both_failure": 83
+      },
+      "10": {
+        "both_success": 0,
+        "gained": 12,
+        "lost": 0,
+        "both_failure": 88
+      }
+    }
+  },
+  "push_pairs_against_standard": {
+    "5": {
+      "both_success": 7,
+      "gained": 10,
+      "lost": 15,
+      "both_failure": 68
+    },
+    "10": {
+      "both_success": 4,
+      "gained": 8,
+      "lost": 23,
+      "both_failure": 65
+    },
+    "30": {
+      "both_success": 0,
+      "gained": 0,
+      "lost": 58,
+      "both_failure": 42
+    }
+  },
+  "preselected_first_scene_diagnostics": {
+    "standard": {
+      "5": {
+        "seed": 70000,
+        "outcome": "failure",
+        "minimum_gripper_rad": 0.06374661098416093,
+        "maximum_cube_height_cm": 1.217985830877796
+      },
+      "10": {
+        "seed": 70000,
+        "outcome": "failure",
+        "minimum_gripper_rad": -0.17985562723267257,
+        "maximum_cube_height_cm": 1.4621015020957393
+      },
+      "30": {
+        "seed": 70000,
+        "outcome": "success",
+        "minimum_gripper_rad": 0.07145460885909868,
+        "maximum_cube_height_cm": 10.185559228141534
+      }
+    },
+    "push": {
+      "5": {
+        "seed": 70000,
+        "outcome": "success",
+        "minimum_gripper_rad": 0.0686341995569143,
+        "maximum_cube_height_cm": 10.162182106003357
+      },
+      "10": {
+        "seed": 70000,
+        "outcome": "failure",
+        "minimum_gripper_rad": -0.1765633104611663,
+        "maximum_cube_height_cm": 1.9843740018327776
+      },
+      "30": {
+        "seed": 70000,
+        "outcome": "failure",
+        "minimum_gripper_rad": -0.1745668292788937,
+        "maximum_cube_height_cm": 1.8105255546957486
+      }
+    }
+  }
+}

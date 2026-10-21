@@ -1,0 +1,7 @@
+{
+  "inputs": {
+    "name": "background_aug",
+    "protocol_sha256": "69f8f732ab9fef1f08cbcea6988616234119f9b106cda7b5ba32e99e88935c95"
+  },
+  "capture": "before_training_launch"
+}

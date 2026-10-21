@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "datasets": [
+    100,
+    20,
+    20
+  ],
+  "training_steps": [
+    6000,
+    6000,
+    6000
+  ],
+  "final_episodes": 300,
+  "no_test_seed_in_training": true,
+  "official_lerobot_readback": true,
+  "input_audit": {
+    "same_observation_action_l2": 0.0,
+    "black_images_action_l2": 0.047647036612033844,
+    "input_shapes": {
+      "observation.state": [
+        6
+      ],
+      "observation.images.front": [
+        96,
+        96,
+        3
+      ],
+      "observation.images.wrist": [
+        96,
+        96,
+        3
+      ]
+    },
+    "meaning": "sensitivity check only, not a complete causal performance test"
+  },
+  "best_variant": "random",
+  "best_successes": 61
+}

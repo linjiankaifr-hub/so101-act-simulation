@@ -1,0 +1,12 @@
+{
+  "lerobot": {
+    "url": "https://github.com/huggingface/lerobot.git",
+    "commit": "1396b9fab7aecddd10006c33c47a487ffdcb54b4",
+    "license": "Apache-2.0"
+  },
+  "so101-ros2-mujoco": {
+    "url": "https://github.com/MuRain37/so101-ros2-mujoco.git",
+    "commit": "6f63e78ccaac928c55e2dbe515866c3a013e599d",
+    "license": "Apache-2.0; retain asset notices"
+  }
+}

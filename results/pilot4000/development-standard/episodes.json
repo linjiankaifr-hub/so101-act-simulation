@@ -1,0 +1,57 @@
+[
+  {
+    "seed": 20000,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.10366193761835468,
+    "final_xy_error_m": 0.007783095297452599,
+    "contact_steps": 256,
+    "policy_queries": 60,
+    "reason": "release_or_stability"
+  },
+  {
+    "seed": 20001,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.02618148046352209,
+    "final_xy_error_m": 0.07935484222730647,
+    "contact_steps": 13,
+    "policy_queries": 60,
+    "reason": "missed_grasp"
+  },
+  {
+    "seed": 20002,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.10799405246697964,
+    "final_xy_error_m": 0.1134813333958911,
+    "contact_steps": 32,
+    "policy_queries": 60,
+    "reason": "outside_target_or_drop"
+  },
+  {
+    "seed": 20003,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.10472139990164435,
+    "final_xy_error_m": 0.010658896528571311,
+    "contact_steps": 255,
+    "policy_queries": 60,
+    "reason": "release_or_stability"
+  },
+  {
+    "seed": 20004,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.015504925439670613,
+    "final_xy_error_m": 0.07644905898996343,
+    "contact_steps": 3,
+    "policy_queries": 60,
+    "reason": "missed_grasp"
+  }
+]

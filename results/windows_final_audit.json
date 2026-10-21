@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-19T12:15:41.0036693+08:00",
+  "final_episodes": 300,
+  "perturbation_episodes": 90,
+  "python_full_suite_passed": 20,
+  "additional_visual_test_passed": 1,
+  "variants": [
+    {
+      "variant": "base",
+      "successes": 58,
+      "episodes": 100,
+      "training_steps": 6000
+    },
+    {
+      "variant": "targeted",
+      "successes": 56,
+      "episodes": 100,
+      "training_steps": 6000
+    },
+    {
+      "variant": "random",
+      "successes": 61,
+      "episodes": 100,
+      "training_steps": 6000
+    }
+  ]
+}

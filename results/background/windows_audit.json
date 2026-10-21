@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scores": {
+    "background_aug": {
+      "background_test": 45,
+      "standard": 58
+    },
+    "background_control": {
+      "background_test": 33,
+      "standard": 52
+    }
+  },
+  "final_episodes": 400,
+  "development_episodes": 80,
+  "previous_models_preserved": 5,
+  "checked_at": "2026-10-19T15:24:03.5451693+08:00"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "episodes": 720,
+  "unique_final_initial_conditions": 100,
+  "old_models_unchanged": true,
+  "core_code_unchanged": true,
+  "scene_xml_unchanged": true,
+  "source": "independent Windows PowerShell audit"
+}

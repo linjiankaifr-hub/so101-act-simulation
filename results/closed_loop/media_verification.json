@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "standard",
+    "frames": 320,
+    "fps": 20.0,
+    "size": [
+      960,
+      384
+    ]
+  },
+  {
+    "condition": "push",
+    "frames": 320,
+    "fps": 20.0,
+    "size": [
+      960,
+      384
+    ]
+  }
+]

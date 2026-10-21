@@ -1,0 +1,35 @@
+{
+  "evaluation_identity": {
+    "files": {
+      "model.safetensors": "d7253b58a00584982ff1031468ddd3d39fb253b2ddd987e359cb715cfeb66c9d",
+      "normalization.json": "79bffd2c685f5ad9c0d6a1a367a442292912476933dad4622dae7366945afdfd",
+      "config.json": "55fd2f97779a69e46ab5f834abecd2460909879c955cdad67c2a6b8c09f64476"
+    },
+    "seeds": [
+      30001
+    ],
+    "variation": "standard",
+    "execution_steps": 30,
+    "task_version": "verified-pinch-lift-release-v2"
+  },
+  "task_version": "verified-pinch-lift-release-v2",
+  "name": "targeted",
+  "split": "test",
+  "variation": "standard",
+  "checkpoint": "/mnt/d/\u5177\u8eab\u667a\u80fd\u5f00\u6e90\u9879\u76ee/\u4eff\u771f\u5b9e\u6218/07-SO101-ACT\u5b8c\u6574\u95ed\u73af/checkpoints/targeted/deploy",
+  "episodes": 1,
+  "successes": 0,
+  "success_rate": 0.0,
+  "elapsed_seconds": 12.704993963241577,
+  "mean_control_steps": 300.0,
+  "policy_inputs": [
+    "observation.images.front",
+    "observation.images.wrist",
+    "observation.state"
+  ],
+  "expert_used": false,
+  "control_hz": 20,
+  "policy_query_hz": 0.6666666666666666,
+  "execution_steps": 30,
+  "success_definition": "verified opposing-jaw contact above 4.5cm; inside target; released; stationary 1 second"
+}

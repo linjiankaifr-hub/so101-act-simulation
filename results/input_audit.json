@@ -1,0 +1,20 @@
+{
+  "same_observation_action_l2": 0.0,
+  "black_images_action_l2": 0.047647036612033844,
+  "input_shapes": {
+    "observation.state": [
+      6
+    ],
+    "observation.images.front": [
+      96,
+      96,
+      3
+    ],
+    "observation.images.wrist": [
+      96,
+      96,
+      3
+    ]
+  },
+  "meaning": "sensitivity check only, not a complete causal performance test"
+}

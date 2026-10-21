@@ -1,0 +1,54 @@
+{
+  "evaluation_identity": {
+    "files": {
+      "model.safetensors": "cc1ffe7245b88e2d905e98db2069e62814308301f7b7f7f431750c7228a28c24",
+      "normalization.json": "df807987d0bbb2d35f1705a4cd448019c73bc71ed094d7e8133b36cc826abb37",
+      "config.json": "55fd2f97779a69e46ab5f834abecd2460909879c955cdad67c2a6b8c09f64476"
+    },
+    "seeds": [
+      22000,
+      22001,
+      22002,
+      22003,
+      22004,
+      22005,
+      22006,
+      22007,
+      22008,
+      22009,
+      22010,
+      22011,
+      22012,
+      22013,
+      22014,
+      22015,
+      22016,
+      22017,
+      22018,
+      22019
+    ],
+    "variation": "background",
+    "execution_steps": 30,
+    "task_version": "verified-pinch-lift-release-v2"
+  },
+  "task_version": "verified-pinch-lift-release-v2",
+  "name": "brightness_control",
+  "split": "background_development",
+  "variation": "background",
+  "checkpoint": "/mnt/d/\u5177\u8eab\u667a\u80fd\u5f00\u6e90\u9879\u76ee/\u4eff\u771f\u5b9e\u6218/07-SO101-ACT\u5b8c\u6574\u95ed\u73af/checkpoints/brightness_control/deploy",
+  "episodes": 20,
+  "successes": 2,
+  "success_rate": 0.1,
+  "elapsed_seconds": 19.76227641105652,
+  "mean_control_steps": 285.75,
+  "policy_inputs": [
+    "observation.images.front",
+    "observation.images.wrist",
+    "observation.state"
+  ],
+  "expert_used": false,
+  "control_hz": 20,
+  "policy_query_hz": 0.6666666666666666,
+  "execution_steps": 30,
+  "success_definition": "verified opposing-jaw contact above 4.5cm; inside target; released; stationary 1 second"
+}

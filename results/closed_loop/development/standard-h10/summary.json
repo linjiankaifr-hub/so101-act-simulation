@@ -1,0 +1,46 @@
+{
+  "identity": {
+    "protocol_sha256": "ee9911fdb66019bd7aa3a5d6d0a13bd40691f43b0861c647204c76c328b17dff",
+    "seeds": [
+      23000,
+      23001,
+      23002,
+      23003,
+      23004,
+      23005,
+      23006,
+      23007,
+      23008,
+      23009,
+      23010,
+      23011,
+      23012,
+      23013,
+      23014,
+      23015,
+      23016,
+      23017,
+      23018,
+      23019
+    ],
+    "condition": "standard",
+    "execution_steps": 10
+  },
+  "episodes": 20,
+  "successes": 9,
+  "elapsed_seconds": 30.41390546799994,
+  "mean_control_steps": 241.1,
+  "mean_policy_queries": 24.25,
+  "query_latency_ms_p50": 16.558613999904992,
+  "query_latency_ms_p95": 19.572420599979523,
+  "failures": {
+    "missed_grasp": 10,
+    "outside_target_or_drop": 1
+  },
+  "policy_inputs": [
+    "observation.images.front",
+    "observation.images.wrist",
+    "observation.state"
+  ],
+  "expert_used": false
+}

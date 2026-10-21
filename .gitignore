@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+official/
+checkpoints/
+models/
+logs/
+python-path.txt
+data/raw/
+data/*.h5
+*.safetensors
+*.pt
+*.pth
+.env
+.env.*

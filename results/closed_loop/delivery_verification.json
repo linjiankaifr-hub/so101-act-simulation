@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "formal_episodes": 600,
+  "development_episodes": 120,
+  "unique_final_initial_conditions": 100,
+  "full_test_suite_passed": 51,
+  "python_audit_passed": true,
+  "windows_audit_passed": true,
+  "decoded_video_count": 2,
+  "obsidian_new_notes": 3,
+  "obsidian_broken_links": 0,
+  "obsidian_attachment_hashes_match": 4,
+  "independent_review_unresolved_critical_or_important": 0
+}

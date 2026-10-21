@@ -1,0 +1,46 @@
+{
+  "base": {
+    "checkpoint_sha256": "b168148092cb2557935fa5bf22404e5c6e6ab49e01996fff83d98657d4a3f98c"
+  },
+  "targeted": {
+    "checkpoint_sha256": "d7253b58a00584982ff1031468ddd3d39fb253b2ddd987e359cb715cfeb66c9d"
+  },
+  "random": {
+    "checkpoint_sha256": "57933fe979479bdce77023900af3e496c1e528fbf98168e8ed3ec83f43b5402e"
+  },
+  "upstream": {
+    "lerobot": "1396b9fab7aecddd10006c33c47a487ffdcb54b4",
+    "so101-ros2-mujoco": "6f63e78ccaac928c55e2dbe515866c3a013e599d"
+  },
+  "local_source_commit": "636f40303bbcf796263dfd40d6126b9ba5ac16bd",
+  "script_sha256": {
+    "scripts/act_tools.py": "3a64d715aaa637e2e238fc2960deca0093a88db7522aa9782bcf12e702ddaff2",
+    "scripts/bench_act.py": "392f92bb95486ba3e74655c62db32ee8cd9c818b4445f85bb359967c6a9e317d",
+    "scripts/benchmark_render.py": "242347432ae5d45448b2ae5d17e6734907156ed17f7dd056b55ec58c362ff917",
+    "scripts/collect.py": "6774a3241879fcd6bfee0a30ca9f3c02b5ef5975b2d612ee6f3048d64f89f9d5",
+    "scripts/dataset_tools.py": "c79e64ca38d68e3d7a808046902265890a64b93778521e4f54ae3004a4103007",
+    "scripts/diagnose_gripper.py": "9dcee4183f322b365ce1074c21d7d722e243d83d0b550f5f1b2699979b42e22f",
+    "scripts/diagnose_pose.py": "31b5458149c0a509d987ab46b1ab383b72a5933f1569b22a88c236f8a6b6362f",
+    "scripts/evaluate_act.py": "658cf241c7fac02f7ad9aa73278205e8d521c39b97564a219117c4d83744b6dc",
+    "scripts/evaluation_identity.py": "353665fe647026aa4fadd7fec114e45c22cbec83bbb4b8976b475c5b61d73542",
+    "scripts/experiment.py": "ecc909532b5445203978add373aea5d6777d5b1d0d1899b03ea20a40ed2db4f5",
+    "scripts/expert.py": "915b2fc3a46fa7b7aff9930a96e638e9b0dc58c8d3935c5daa3e46da3819d6ce",
+    "scripts/expert_smoke.py": "10dc59c22aea56d17afb5500ec84b21ecebdf2f432119b9e7efd149db8ed2fd6",
+    "scripts/explain_data.py": "d87541962dabf692f5caf8e825d602d0188de218d3e608e75c9466419011e229",
+    "scripts/export_lerobot.py": "ebda1ebb8fb365f6b8f8b0517e023e026d91e1178d8d746c5aa9c79e56a67214",
+    "scripts/freeze_model.py": "da5970f095d9b0fec9e62711a0936f45be76a90c7bf397f82e16b47deaa2f3f2",
+    "scripts/pipeline.py": "3c557e56c9eec2ac2212ace00d4d6dfe46ad376afd00900c1d8254e8e5f6e3d9",
+    "scripts/preview_media.py": "841c3a875da811d04503818bcf190c0281be681e82fe59ef5916857f21da45da",
+    "scripts/publish_notes.py": "91ed5a21166562e6ecc758d2abaf41c8c83c59fc630d2b95565cfcf5ea6ef80f",
+    "scripts/report.py": "d9aa5133c5694ab5fc77f0744cd7e94774a038edeb5557b42962b1a5a4d2dab6",
+    "scripts/ros_bridge.py": "aa8bb91bcb1a695c36cb58894e4d89a6c056f236555b519825c750883f15989e",
+    "scripts/ros_contract.py": "ced5899a9fbaf33d64b08c0b5195d865bf7ba837c8fb9728687ee6173719255c",
+    "scripts/ros_smoke.py": "2f6b17a2d975f5cf8f91b11a8f836676ab7485906259220244cdd23d50d1ffd8",
+    "scripts/so101_env.py": "6ec98ee68c92108cccac26d3699c6773133e888511d42e388bbc9ecd9d61943b",
+    "scripts/stage_artifacts.py": "e9de0217cab59749953bb00776eebd69864481a7a392683ec0a5df08d85c4c67",
+    "scripts/status.py": "58a401cb84ae0c5d49e322b5cc974da574af00fe35d6049ea899dcd9cd533a7b",
+    "scripts/train_act.py": "a8d55da38e23b6e74d5427ba1a4291bc580801035a7d2bba8e91f7f2753f4c5a"
+  },
+  "torch": "2.7.1+cu126",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

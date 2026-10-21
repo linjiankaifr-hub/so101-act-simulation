@@ -1,0 +1,21 @@
+{
+  "name": "pilot6000-short",
+  "split": "development",
+  "variation": "standard",
+  "checkpoint": "/mnt/d/\u5177\u8eab\u667a\u80fd\u5f00\u6e90\u9879\u76ee/\u4eff\u771f\u5b9e\u6218/07-SO101-ACT\u5b8c\u6574\u95ed\u73af/checkpoints/base/step_6000",
+  "episodes": 10,
+  "successes": 1,
+  "success_rate": 0.1,
+  "elapsed_seconds": 30.794625282287598,
+  "mean_control_steps": 286.2,
+  "policy_inputs": [
+    "observation.images.front",
+    "observation.images.wrist",
+    "observation.state"
+  ],
+  "expert_used": false,
+  "control_hz": 20,
+  "policy_query_hz": 4.0,
+  "execution_steps": 5,
+  "success_definition": "lift above 4.5cm; inside target; released; stationary 1 second"
+}

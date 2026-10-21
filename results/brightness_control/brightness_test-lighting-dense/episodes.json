@@ -1,0 +1,16 @@
+[
+  {
+    "seed": 50002,
+    "success": false,
+    "steps": 300,
+    "simulation_seconds": 15.0,
+    "max_cube_height": 0.10129860503403326,
+    "final_xy_error_m": 0.044361035041708824,
+    "verified_grasp_lift": true,
+    "dropped_outside_target": true,
+    "timed_out": true,
+    "contact_steps": 71,
+    "policy_queries": 10,
+    "reason": "outside_target_or_drop"
+  }
+]

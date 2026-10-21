@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "received": {
+    "front": 2,
+    "wrist": 2,
+    "state": 11
+  },
+  "reset": {
+    "epoch": 3
+  },
+  "domain": 47
+}

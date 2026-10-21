@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "training_updates": [
+    6000,
+    6000
+  ],
+  "same_initial_parameter_sha256": "d70d6be7c1eed6e46281ae3f947d2188dc20d26f3b85c711a1129ee86dd7c1dd",
+  "same_data_normalization_and_model": true,
+  "development_episodes": 80,
+  "final_episodes": 400,
+  "old_models_unchanged": true,
+  "standard_delta_percentage_points": 11,
+  "lighting_delta_percentage_points": 4,
+  "scores": {
+    "brightness_control": {
+      "standard": 65,
+      "lighting": 64
+    },
+    "brightness_aug": {
+      "standard": 76,
+      "lighting": 68
+    }
+  },
+  "paired_counts": {
+    "standard": {
+      "both_success": 56,
+      "gained": 20,
+      "lost": 9,
+      "both_failure": 15
+    },
+    "lighting": {
+      "both_success": 49,
+      "gained": 19,
+      "lost": 15,
+      "both_failure": 17
+    }
+  },
+  "demo_status": "success",
+  "demo_source": "results/brightness_aug/brightness_test-lighting-dense/success.mp4",
+  "run_bindings": {
+    "brightness_control": {
+      "inputs": {
+        "name": "brightness_control",
+        "protocol_sha256": "01be907f1a5bfa76b4e98b819d82b9357c13d24cccf4764dd106f319c7b903d8"
+      },
+      "capture": "verified backfill during first run; original ordered LeRobot splits and pre-training manifest timestamps checked",
+      "evidence": {
+        "original_export_splits_match": true,
+        "manifests_predate_first_initialization": true,
+        "core_code_and_hdf5_match_initial_protocol": true,
+        "legacy_protocol_sha256": "eba39545431e35ecf272de4eb0a29c312b8137fcb35572d267b9d429e4ca049e"
+      }
+    },
+    "brightness_aug": {
+      "inputs": {
+        "name": "brightness_aug",
+        "protocol_sha256": "01be907f1a5bfa76b4e98b819d82b9357c13d24cccf4764dd106f319c7b903d8"
+      },
+      "capture": "verified backfill during first run; original ordered LeRobot splits and pre-training manifest timestamps checked",
+      "evidence": {
+        "original_export_splits_match": true,
+        "manifests_predate_first_initialization": true,
+        "core_code_and_hdf5_match_initial_protocol": true,
+        "legacy_protocol_sha256": "eba39545431e35ecf272de4eb0a29c312b8137fcb35572d267b9d429e4ca049e"
+      }
+    }
+  },
+  "source_commit": "1e2bcd2c3599539dc00caa8ba4ee73dbd90c117d"
+}

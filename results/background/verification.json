@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "scores": {
+    "background_control": {
+      "standard": 52,
+      "background_test": 33
+    },
+    "background_aug": {
+      "standard": 58,
+      "background_test": 45
+    }
+  },
+  "deltas_percentage_points": {
+    "standard": 6,
+    "background_test": 12
+  },
+  "same_initial_parameter_sha256": "d70d6be7c1eed6e46281ae3f947d2188dc20d26f3b85c711a1129ee86dd7c1dd",
+  "training_updates": {
+    "background_control": 6000,
+    "background_aug": 6000
+  },
+  "old_models_unchanged": true,
+  "diagnostic_episodes": 40,
+  "new_development_episodes": 80,
+  "final_episodes": 400,
+  "unique_final_initial_conditions": 100,
+  "per_color": {
+    "background_control": {
+      "0": {
+        "rgb": [
+          0.25,
+          0.35,
+          0.4
+        ],
+        "episodes": 25,
+        "successes": 6
+      },
+      "1": {
+        "rgb": [
+          0.4,
+          0.25,
+          0.65
+        ],
+        "episodes": 25,
+        "successes": 6
+      },
+      "2": {
+        "rgb": [
+          0.35,
+          0.6,
+          0.3
+        ],
+        "episodes": 25,
+        "successes": 5
+      },
+      "3": {
+        "rgb": [
+          0.7,
+          0.45,
+          0.2
+        ],
+        "episodes": 25,
+        "successes": 16
+      }
+    },
+    "background_aug": {
+      "0": {
+        "rgb": [
+          0.25,
+          0.35,
+          0.4
+        ],
+        "episodes": 25,
+        "successes": 9
+      },
+      "1": {
+        "rgb": [
+          0.4,
+          0.25,
+          0.65
+        ],
+        "episodes": 25,
+        "successes": 8
+      },
+      "2": {
+        "rgb": [
+          0.35,
+          0.6,
+          0.3
+        ],
+        "episodes": 25,
+        "successes": 12
+      },
+      "3": {
+        "rgb": [
+          0.7,
+          0.45,
+          0.2
+        ],
+        "episodes": 25,
+        "successes": 16
+      }
+    }
+  },
+  "paired_counts": {
+    "standard": {
+      "both_success": 39,
+      "gained": 19,
+      "lost": 13,
+      "both_failure": 29
+    },
+    "background_test": {
+      "both_success": 22,
+      "gained": 23,
+      "lost": 11,
+      "both_failure": 44
+    }
+  },
+  "failure_reasons": {
+    "background_control": {
+      "standard": {
+        "missed_grasp": 28,
+        "outside_target_or_drop": 20
+      },
+      "background_test": {
+        "missed_grasp": 45,
+        "outside_target_or_drop": 22
+      }
+    },
+    "background_aug": {
+      "standard": {
+        "missed_grasp": 23,
+        "outside_target_or_drop": 19
+      },
+      "background_test": {
+        "missed_grasp": 40,
+        "outside_target_or_drop": 15
+      }
+    }
+  },
+  "diagnostics": {
+    "brightness_control": 2,
+    "brightness_aug": 1
+  },
+  "artifacts_sha256": {
+    "comparison.png": "874b6ca9b90bc7596d6d62ba9d2fd0ad9c14cadf116750508dd089173ca4d59f",
+    "augmentation_example.png": "747f8e0e56d2c36de276734b2a81577cb3288d0e1465c870343b1e6a78693189",
+    "demo.mp4": "c1dc467108676493a1a0b0edec45655c64ff00a507cd336c54346073fb515bfc",
+    "demo.gif": "888165a569b998965529da184d2b311bfa3286f41533b3444bed715ab3b3f6ac"
+  },
+  "source_commit": "7330a1f815fc5052f1d011c7973599fa9373e1b9"
+}
