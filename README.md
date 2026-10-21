@@ -31,3 +31,9 @@
 
 上游许可证及贡献说明：[THIRD_PARTY.md](THIRD_PARTY.md)。
 
+
+## 动作窗口失败分析
+
+新增[保存轨迹诊断](results/closed_loop/diagnosis-20261021/分析报告.md)与[面试讲述](docs/diagnosis-interview-20261021.md)：配对统计改善和退步，并对同一初始条件检查方块高度、夹爪状态及动作目标变化。只分析已有结果，没有新增训练或恢复控制器。
+
+![轨迹诊断](results/closed_loop/diagnosis-20261021/saved-trajectory-diagnosis.png)

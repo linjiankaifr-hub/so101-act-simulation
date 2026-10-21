@@ -1,0 +1,152 @@
+{
+  "purpose": "Descriptive analysis of existing results; no new policy or recovery claims",
+  "paired_counts": [
+    {
+      "condition": "standard",
+      "window": 5,
+      "both_success": 13,
+      "new_success": 9,
+      "lost_success": 45,
+      "both_failure": 33
+    },
+    {
+      "condition": "standard",
+      "window": 10,
+      "both_success": 22,
+      "new_success": 5,
+      "lost_success": 36,
+      "both_failure": 37
+    },
+    {
+      "condition": "push",
+      "window": 5,
+      "both_success": 0,
+      "new_success": 17,
+      "lost_success": 0,
+      "both_failure": 83
+    },
+    {
+      "condition": "push",
+      "window": 10,
+      "both_success": 0,
+      "new_success": 12,
+      "lost_success": 0,
+      "both_failure": 88
+    }
+  ],
+  "representatives": [
+    {
+      "seed": 70000,
+      "condition": "standard",
+      "window": 5,
+      "success": false,
+      "steps": 300,
+      "max_cube_height_m": 0.01217985830877796,
+      "minimum_tcp_cube_distance_m": 0.013726920299394726,
+      "arm_target_change_rad_boundary": {
+        "mean": 0.018364081159234047,
+        "p95": 0.09791007563471793,
+        "n": 59
+      },
+      "arm_target_change_rad_within_chunk": {
+        "mean": 0.012131576426327229,
+        "p95": 0.06771021820604795,
+        "n": 240
+      },
+      "gripper_target_change_rad_boundary": {
+        "mean": 0.15468788146972656,
+        "p95": 0.19162669479846953,
+        "n": 59
+      },
+      "gripper_target_change_rad_within_chunk": {
+        "mean": 0.04201028123497963,
+        "p95": 0.09776245504617691,
+        "n": 240
+      },
+      "actual_gripper_min_rad": 0.06374661098416093
+    },
+    {
+      "seed": 70000,
+      "condition": "standard",
+      "window": 10,
+      "success": false,
+      "steps": 300,
+      "max_cube_height_m": 0.014621015020957393,
+      "minimum_tcp_cube_distance_m": 0.014760638263183492,
+      "arm_target_change_rad_boundary": {
+        "mean": 0.07959327101707458,
+        "p95": 0.2334207832813262,
+        "n": 29
+      },
+      "arm_target_change_rad_within_chunk": {
+        "mean": 0.04017721116542816,
+        "p95": 0.11404992416501042,
+        "n": 270
+      },
+      "gripper_target_change_rad_boundary": {
+        "mean": 0.05962971970438957,
+        "p95": 0.14983725547790527,
+        "n": 29
+      },
+      "gripper_target_change_rad_within_chunk": {
+        "mean": 0.018941378220915794,
+        "p95": 0.08200473040342322,
+        "n": 270
+      },
+      "actual_gripper_min_rad": -0.17985562723267257
+    },
+    {
+      "seed": 70000,
+      "condition": "standard",
+      "window": 30,
+      "success": true,
+      "steps": 161,
+      "max_cube_height_m": 0.10185559228141533,
+      "minimum_tcp_cube_distance_m": 0.01119487795102269,
+      "arm_target_change_rad_boundary": {
+        "mean": 0.09961293637752533,
+        "p95": 0.16271696984767914,
+        "n": 5
+      },
+      "arm_target_change_rad_within_chunk": {
+        "mean": 0.058141596615314484,
+        "p95": 0.15815855264663692,
+        "n": 155
+      },
+      "gripper_target_change_rad_boundary": {
+        "mean": 0.008505130186676979,
+        "p95": 0.01805906295776367,
+        "n": 5
+      },
+      "gripper_target_change_rad_within_chunk": {
+        "mean": 0.018455682322382927,
+        "p95": 0.10836377143859859,
+        "n": 155
+      },
+      "actual_gripper_min_rad": 0.07145460885909868
+    }
+  ],
+  "source_sha256": {
+    "results/closed_loop/test/standard-h5/episodes.json": "481e6a5c4e6937a11d57a858f87dcabc0b0e50eb7487c710c4117356dd1d65fa",
+    "results/closed_loop/test/standard-h10/episodes.json": "a3c797178c15f69863be243890868ccacf08ac6158518dce020c40f145c1d7e4",
+    "results/closed_loop/test/standard-h30/episodes.json": "ea37ca4d3cb2d7acb1d22e6452f24938f781f611b3877985bab638d7f3d80744",
+    "results/closed_loop/test/push-h5/episodes.json": "713356c96d3c20edacfabbbc9bb7d0c2eeeff6356a00a8776aa4a4e165e7366b",
+    "results/closed_loop/test/push-h10/episodes.json": "8816c4719658c2f9dd2a7be5d80bf254f376f3cd5725b9eac7725153c3c7f8f1",
+    "results/closed_loop/test/push-h30/episodes.json": "2d9254205f7c818c83293a50c4a16c759d6d8d194a356d990f0a0ba42f8ecdbf",
+    "results/closed_loop/test/standard-h5/failure-frames.npz": "d224ab0ac3d6a51613cf3b59119ac161eaf4100aa31362bd4740252da5491c16",
+    "results/closed_loop/test/standard-h5/success-frames.npz": "7bcaf82240e1e649275ed9b334216c3ed6ae53274c89ecdee590f5fb168e7afa",
+    "results/closed_loop/test/standard-h5/failure-trace.npz": "861416b4e1bc017f9ba87d722aa3bb34dd26abb1d16ae2313de530900a8063c2",
+    "results/closed_loop/test/standard-h10/failure-frames.npz": "c6c22d4d3117f8851ab9598773ee1c03cfefb68c352e42349e266014d378f3e9",
+    "results/closed_loop/test/standard-h10/success-frames.npz": "478cfdbfc2c3de9e6eb7553e8b2d67e9fbaa5a146b6ba224031b5c6742a530cd",
+    "results/closed_loop/test/standard-h10/failure-trace.npz": "e43e3108461983381c39693cb662c6d62c60f8e1c88709fc995af44af0358396",
+    "results/closed_loop/test/standard-h30/failure-frames.npz": "a890fa19867b2dbda7c31e2d770945240269591ccbdb7a2f6858f76e33b2f474",
+    "results/closed_loop/test/standard-h30/success-frames.npz": "51cf9732ce4b348e0b2718298d1166fa604d6acb60951a1b5bc793849296bd70",
+    "results/closed_loop/test/standard-h30/success-trace.npz": "ff2bf6d37b6ce8c71f77005da1a82e7f386cdae7b8346079d8683775c89072fd"
+  },
+  "limitations": [
+    "All trace comparisons use only the preselected seed70000.",
+    "Window changes the trajectory, phase and number of boundary samples; boundary jump averages are descriptive, not causal.",
+    "Cube height does not prove verified two-jaw contact or sustained success.",
+    "Ground-truth object state is offline diagnostic data only; it was not a policy input."
+  ]
+}
